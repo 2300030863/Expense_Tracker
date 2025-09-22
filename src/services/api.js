@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Allow overriding base URL via environment; fall back to direct backend URL to avoid dev proxy issues
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8086/api'
+const API_BASE_URL = 'http://localhost:8086/api'
 
 // Create axios instance
 const api = axios.create({
